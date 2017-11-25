@@ -10,7 +10,7 @@ $(window).on('scroll', function () {
 
 // hero
 $('#hero').vegas({
-	delay:3500,
+	delay:2500,
 	shuffle:true,
 	
 	timer: false,
@@ -20,8 +20,8 @@ $('#hero').vegas({
 	{src:'assets/img/3.jpg'},
 	{src:'assets/img/4.jpg'}
 	],
-	transition: 'blur',
-	transitionDuration:1500
+	transition: 'blur2',
+	transitionDuration:1000
 });
 
 // gallery
@@ -35,16 +35,27 @@ $(document).ready(function(){
         if(value == "all")
         {
             //$('.filter').removeClass('hidden');
-            $('.item').show('1000');
+            $('.item').show('2000');
         }
         else
         {
 //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
 //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-            $(".item").not('.'+value).hide('3000');
-            $('.item').filter('.'+value).show('3000');
+            $(".item").not('.'+value).hide('3000').addClass('.none');
+            $('.item').filter('.'+value).show('3000').addClass('.flex');
             
         }
     });
+
+
+
+	var $container = $(".masonry-container");
+	$container.imagesLoaded(function () {
+		$container.masonry({
+			columnWidth: ".item",
+			itemSelector: ".item"
+		});
+		
+	});
 
 });

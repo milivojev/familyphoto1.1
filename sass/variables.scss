@@ -7,8 +7,10 @@ $bootstrap-sass-asset-helper: false !default;
 //== Colors
 
 $main-color:#fff;
-$main-green:rgba(39,144,105,0.95);
-$hover-light: yellow;
+$main-green:rgba(0,153,51,1);
+$menu-color:rgba(0,102,51,1);
+$hover-light: rgba(255,255,0,1);
+$hover-background: rgba(0,153,51,0.5);
 $white:#fff;
 //
 //## Gray and brand colors for use across Bootstrap.

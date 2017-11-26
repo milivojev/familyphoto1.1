@@ -9,6 +9,7 @@
     <title>Family photo</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran|Josefin+Sans|Roboto+Mono|Ubuntu+Mono"">
     
+  
     <link href="css/vegas.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
 </head>
@@ -34,8 +35,8 @@
           <li><a href="#">About&nbspme</a></li>
           <li><a href="#">Gallery</a></li>
           <li><a href="#">Retouch</a></li>
-          <li><a href="#">Shop</a></li>
           <li><a href="#">Blog</a></li>
+          <li><a href="#">Shop</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
   
@@ -49,10 +50,10 @@
 <!-- hero section -->
 <div id="hero">
 	<div class="hero-text">
-    <h3>Zivot je trenutak, fotografija&nbspje&nbspza&nbspuvek</h3>
-    <h2>Dobrodosli na Family photo</h2>
+    <h3>Life is beautiful moment, photos are forever</h3>
+    <h2>Welcome to Family&nbspphoto</h2>
    
-     <a href="#" class="button">Pogledaj izbor usluga</a>
+     <a href="#" class="button">Look at the services I have for you</a>
   </div>
 </div> <!-- end hero -->
 
@@ -62,11 +63,12 @@
 		<div class="row">
 			<div class="col-sm-4 o_meni">
 				<img src="./assets/img/o_meni.jpg" alt="" class="img-responsive img-circle">
-				<h3>Ja sam Milivoj Vasiljevic</h3>
-				<h4 class="text-danger">Vas porodicni fotograf</h4>
+				<h3>I am Milivoj Vasiljevic</h3>
+				<h4 class="text-danger">Yours family photographer</h4>
 			</div>
 			<div class="col-sm-8 text">
-				 <p>Porodična fotografija spada među najvrednijim stvarima koje imamo u svojoj kući, u svom novčaniku, telefonu, u svom putujućem koferu. </p>
+        <h3>I am portrait photographer based in Pancevo, Serbia, peaceful city only 10km from Belgrade.</h3>
+				 <p>Ovo na engleskom treba.Porodična fotografija spada među najvrednijim stvarima koje imamo u svojoj kući, u svom novčaniku, telefonu, u svom putujućem koferu. </p>
    				 <p>Njenu vrednost poćeo sam shvatati tek u 30toj godini, dok sam radio na jednom od najvećih prekookeanskih kruzera kao portretni fotograf. Svakodnevno sam fotografisao veliki broj porodica, a mnoge i više puta tokom putovanja.</p>
    				 <p> Pored svih čuda sveta koje sam video,ostalo mi je među najjačim utiscima shvatanje koliko se porodica voli i poštuje, koliko je bogatstvo lepa, porodična fotografija.</p>
    				
@@ -87,8 +89,8 @@
 </section> <!-- end o meni -->
 
 <!-- gallery section -->
-<section id="gallery">
-    <h2 class="text-center">Gallery</h2>
+<section id="gallery" >
+    <h2 >Gallery</h2>
     <div class="gallery-nav">
             <a href="" class="button" data-filter="all">All</a>
             <a href="" class="button" data-filter="kids">Kids</a>
@@ -109,17 +111,19 @@
           <div class="col-md-3 col-sm-4 col-xs-12 item kids"><img src="assets/img/gallery2.jpg" alt=""></div>
           <div class="col-md-3 col-sm-4 col-xs-12 item kids"><img src="assets/img/gallery3.jpg" alt=""></div>
           <div class="col-md-3 col-sm-4 col-xs-12 item  kids"><img src="assets/img/gallery4.jpg" alt=""></div>
-          <div class="col-md-3 col-sm-4 col-xs-12 item families"><img src="assets/img/gallery5.jpg" alt=""></div>
-          <div class="col-md-3 col-sm-4 col-xs-12 item portraits"><img src="assets/img/gallery6.jpg" alt=""></div>
+          <div class="col-md-3 col-sm-4 col-xs-12 item families"><img src="assets/img/gallery15.jpg" alt=""></div>
+          <div class="col-md-3 col-sm-4 col-xs-12 item portraits"><img src="assets/img/gallery12.jpg" alt=""></div>
           <div class="col-md-3 col-sm-4 col-xs-12 item couples"><img src="assets/img/gallery7.jpg" alt="" ></div>
-          <div class="col-md-3 col-sm-4 col-xs-12 item couples "><img src="assets/img/gallery8.jpg" alt="" ></div>
+          <div class="col-md-3 col-sm-4 col-xs-12 item couples "><img src="assets/img/gallery16.jpg" alt="" ></div>
           <div class="col-md-3 col-sm-4 col-xs-12 item couples"><img src="assets/img/gallery9.jpg" alt=""></div>
           <div class="col-md-3 col-sm-4 col-xs-12 item couples"><img src="assets/img/gallery10.jpg" alt=""></div>
-          <div class="col-md-3 col-sm-4 col-xs-12 item families"><img src="assets/img/gallery11.jpg" alt=""></div>
-          <div class="col-md-3 col-sm-4 col-xs-12 item  couples item-tall"><img src="assets/img/gallery12.jpg" alt=""></div>
+          <div class="col-md-3 col-sm-4 col-xs-12 item families"><img src="assets/img/gallery14.jpg" alt=""></div>
+          <div class="col-md-3 col-sm-4 col-xs-12 item families"><img src="assets/img/gallery5.jpg" alt=""></div>
+          
         
         </div>  
       </div>
+      <!-- galerija sa flex -->
      <!--  <img src="assets/img/gallery1.jpg" alt="" class="item families">
       <img src="assets/img/gallery2.jpg" alt="" class="item kids">
       <img src="assets/img/gallery3.jpg" alt="" class="item kids">
@@ -142,6 +146,200 @@
     </div>
 </section>
 
+<section id="testimonials">
+  <h2 >Testimonials</h2>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+      
+<!-- Bottom Carousel Indicators -->
+<!-- <ol class="carousel-indicators">
+  <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+  <li data-target="#quote-carousel" data-slide-to="1"></li>
+  <li data-target="#quote-carousel" data-slide-to="2"></li>
+  <li data-target="#quote-carousel" data-slide-to="3"></li>
+</ol> -->
+        
+<!-- Carousel Slides / Quotes -->
+<div class="carousel-inner">
+
+<!-- Quote 1 -->
+<div class="item active">
+  <div class="row">
+    <div class="col-sm-12">
+      <img src="assets/img/gallery1.jpg" alt="" class="img-circle">
+      <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet noda magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.&rdquo;</p>
+      <small><strong>Vulputate M., Dolor</strong></small>
+    </div>
+  </div>
+</div>
+<!-- Quote 2 -->
+<div class="item ">
+  <div class="row">
+    <div class="col-sm-12">
+      <img src="assets/img/gallery11.jpg" alt="" class="img-circle">
+      <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit.or sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius t non magna. Etgue. Donec id elit non mi porta gravida at eget metus.&rdquo;</p>
+      <small><strong>SDsde M., Dolor</strong></small>
+    </div>
+  </div>
+</div>
+<!-- Quote 2 -->
+<div class="item ">
+  <div class="row">
+    <div class="col-sm-12">
+      <img src="assets/img/gallery13.jpg" alt="" class="img-circle">
+      <p>&ldquo;Lorem ipsum dolor sit amet, consrius t non magna. Etgue. Donec id elit non mi porta gravida at eget metus.&rdquo;</p>
+      <small><strong>SDsde M., Dolor</strong></small>
+    </div>
+  </div>
+</div>
+<!-- Quote 3 -->
+<div class="item ">
+  <div class="row">
+    <div class="col-sm-12">
+      <img src="assets/img/gallery6.jpg" alt="" class="img-circle">
+      <p>&ldquo;Lorem ipsum dolor sit amet, consectetur a pharetra augue. Donec a pharetra augue. Donec a pharetra augue. Donec id elit non mi porta gravida at eget metus.&rdquo;</p>
+      <small><strong>SDsde M., Dolor</strong></small>
+    </div>
+  </div>
+</div>
+
+  
+      </div>                          
+    </div>
+  </div>
+</div>
+
+
+  
+</section> <!-- end section testimonials -->
+
+<section id="retouch" >
+    <div class="container">
+      <div class="row"></div>
+      <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+        <h2 >Retouch </h2>
+        <div class="text-center retouch-paragraph" >
+        <p>Do I use photoshop? Yes, of course, but only when necesery. No real need for photoshop on photo above :)</p>
+        <p>To see all services we can provide for you visit our <a href="" class="link">Shop</a> page.</p> 
+        </div>
+        <div class="ba-slider maxh6">
+             <img class="" src="assets/img/retouch1.jpg" alt="">       
+            <div class="resize">
+                <img class="" src="assets/img/retouch2.jpg" alt="">
+            </div>
+            <span class="handle"></span>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="blog">
+  <div class="container">
+    <h2>Blog spot</h2>
+    <h3>Share and read mine and yours photo stories and advices</h3>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="content text-center">
+          <div class="img-icon">
+          <img src="assets/img/icons/photographer.svg" alt=""  >
+          </div>
+          <p>Read my experiences from shootings and advices i have for photography starters (camera setups, photoshop short tips etc.).    </p>
+          <div class="blog-list">
+            <h4>Latest articles</h4>
+            <ul>
+             <li><a href="">Great comercial photo with mobile phone camera</a></li>
+             <li><a href="">Shooting in lowlight conditions</a></li>
+             <li><a href="">My favourite photo</a></li>
+            </ul>
+          </div>
+          <a href=""class="button">And more stories on blog</a>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="content text-center ">
+          <div class="img-icon">
+            <img src="assets/img/icons/networking.svg" alt="" >
+           </div> 
+          <p>To love means to share.  Write us, share your interesting photo experiences here, your advices or maybe impressions you had on our shooting. Anything related to photography what could be interested for others.Only one photo can have such a great story. I belive you have the same experience. </p>
+          <a href=""class="button ">Participate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section> <!-- end blog section -->
+
+<section id="shop">
+  <div class="container text-center">
+    <h2>You like what I do?</h2>
+    <p>Check out the offers and services I have prepared for you or <a href="">contact me.</a></p>
+    <p>If we already had a shooting you can enter this section, log in and then browse and select your photos you want to get</p>
+    <a href="" class="button">Enter the shop now</a>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+  <h2>Contact</h2>
+  <div>
+<!--     <h4>I am based in Pancevo, Serbia, peaceful city only 10km from Belgrade.</h4>
+ -->    <h4>If you look for something more specific that i have oferd, please do not hesitate do contact me. I am sure we can make something special for you.</h4>
+  </div>
+  
+  <!-- Contact Form -->
+      <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+      <div class="row">
+        <div class="col-lg-8 col-mb-4 col-lg-offset-2 col-mb-offset-4">
+          <h3>Send us a Message</h3>
+          <form name="sentMessage" id="contactForm" novalidate>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Full Name:</label>
+                <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                <p class="help-block"></p>
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Phone Number:</label>
+                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Email Address:</label>
+                <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Message:</label>
+                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+              </div>
+            </div>
+            <div id="success"></div>
+            <!-- For success/fail messages -->
+            <button type="submit" class="btn button" id="sendMessageButton">Send Message</button>
+          </form>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+  </div>
+</section>
+
+<footer>  
+     <div class="contact-links">
+            <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+            <a href="viber://pa?chatURI=[public account URI]&text=[message text]"><i src="assets/img/icons/viber.svg" alt=""></i>Viber</a>
+            <a href="tel:+381691455169"><i class="fa fa-phone" aria-hidden="true"></i></a>
+        </div>
+</footer>
 
   <script src="assets/jquery/jquery.min.js"></script>
   <script src="assets/js/vegas.js"></script>
@@ -152,7 +350,11 @@
   <script src="assets/js/jquery-imagefill.js"></script>
   <script src="assets/js/masonry.pkgd.min.js"></script>
 
+  <script src="assets/js/icslider.js"></script>
+
 
     <script src="js/main.js"></script>
+    <script src="js/parallax.min.js"></script>
+
 </body>
 </html>

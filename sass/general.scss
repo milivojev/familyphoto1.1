@@ -12,30 +12,38 @@
 
 .navbar-default{ 
 
-  .navbar-nav > .active > a,  .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color:yellow;
-    background-color:  $main-green; }
+  .navbar-nav > .active > a,  .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus 
+      {
+       
+    color:$hover-light;
+    background-color:  $menu-color; 
+  }
       // when changing color here, set same color to element a below, because of auto color setting
 
-  background-color:$main-green;  
+  background-color:$menu-color;  
   .navbar-nav > li > a{
+    border-radius:20px;
   color:set-text-color($main-green);
   font-family: 'Josefin-sans','Roboto Mono',sans-serif;
   font-size: 1.4em;
   text-align: center;
   &:hover {
     color:$hover-light;
-    background-color:$main-green;
+    // background-color:$main-green;
     }
   }
   
   .navbar-brand  {
-  color:#ff9400;
+  color:$hover-light;
   // font-size: 2em;
   a {
     font-family: 'Catamaran', 'Ubuntu Mono',sans-serif;
   
     }
+  }
+  .navbar-brand:hover{
+    color:$hover-light;
+    background-color:$main-green;
   }
 
 }
@@ -195,64 +203,108 @@
 
 // section
 section {
-  padding:60px;
+  padding:40px;
+  p {
+     
+    font-size: 1.3em;
+    font-family:'Roboto Mono', sans-serif;
+  }
+  
+  h2 {
+     text-align: center;
+    margin: 0 0 10px;
+    font-family: "Ubuntu Mono",sans-serif;
+    font-size: 3em;
+  }
+  h3,h4,h5,h6{
+    text-align: center;
+    margin: 10px 0 10px;
+    font-family: "Ubuntu Mono",sans-serif;
+  }
+  a {
+    font-family: 'Roboto Mono',Arial;
+  } 
+   .button {
+  text-transform: uppercase;
+  color: $hover-light;
+  padding: 10px 20px;
+  border: 1px solid $hover-light;
+  border-radius:20px;
+  text-decoration: none ;
+  // margin-bottom: 70px;
+  margin:8px;
+   background-color:rgba(50,50,50,0.3);
+   transition: all 0.3s ease;
+   flex:0 0 auto;
+   text-align: center;
+  &:hover {
+    color:$hover-light;
+    background-color:$hover-background;
+      }
+    }
 
 }
 @media screen 
-  and (max-width: 420px) 
+  and (max-width: 640px) 
   and (max-height: 740px) {
     section{
       padding:30px 10px;
+
     }
+     p {
+    font-size: 1em !important;
+  }
   }
 // hero
-.hero-text{
-  
-  // background:url('../assets/img/22.jpg');
-  background-size: cover;
-  background-position:center;
-  background-repeat:no-repeat;
-  // background-color:rgba(124,124,124,1);
-  width:100wh;
+.hero-text {
+   background-size: cover;
+  background-position: center;
+  width: 100wh;
   height: 100vh;
+  padding:10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  margin:auto;
-  padding:15px;
-  & h2,h3{
-    color: #fff;
-      text-align: center;
-  }
+
+  margin: auto;
+
+   & h2, h3 {
+    color: $white;
+    line-height: 1;
+    text-align: center;
+  } 
   & h2 {
-    
+    color:$white;
     font-size: 2.7em;
     text-transform: uppercase;
-  
+    font-family: "Ubuntu Mono",sans-serif;
     margin-bottom: 40px ;
-  
+    
    } 
   & h3 {
     margin-bottom: 25px;
     font-size: 1.5em;
     font-weight: normal;
+    font-family: "Catamaran","Ubuntu Mono",sans-serif;
   }
   .button {
   text-transform: uppercase;
   color: white;
   padding: 20px;
-  border: 1px solid white;
+  border: 1px solid $hover-light;
   text-decoration: none ;
   margin-bottom: 70px;
    background-color:rgba(50,50,50,0.3);
    transition: all 0.3s ease;
   &:hover {
     color:$hover-light;
-    background-color:rgba(250,250,250,0.3);
+    background-color:$hover-background;
     }
   }
 }
+  
+
 #o_meni {
   .o_meni{
     padding-bottom: 30px;
@@ -267,8 +319,7 @@ section {
     line-height: 2em;
   }
   p {
-    font-size: 1.5em;
-    font-family:'Roboto Mono', sans-serif;
+    text-align: center;
   }
 }
 @media only screen and  (min-width: 767px) 
@@ -355,44 +406,25 @@ section {
 // galerija sa grid, ne radi dobro kategorizacija
 
 #gallery{
-  background-color:#aaa;
+
+  // background-color:rgba(0,152,51,0.3);
   
   h2{
-    font-family: "Ubuntu Mono",sans-serif;
-  color: white;
-  font-size: 3em;
+  
+  color: set-text-color($main-color);
   }
   .gallery-nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-
-  }
-  .button {
-  text-transform: uppercase;
-  color: white;
-  padding: 10px 20px;
-  border: 1px solid white;
-  text-decoration: none ;
-  // margin-bottom: 70px;
-  margin:8px;
-   background-color:rgba(50,50,50,0.3);
-   transition: all 0.3s ease;
-   flex:1 0 auto;
-   text-align: center;
-  &:hover {
-    color:$hover-light;
-    background-color:rgba(250,250,250,0.3);
     }
-  }
+ 
   .masonry-container {
   padding: 0;
   }
 
-  .item {
-  
-  padding:10px;
+  .item { 
+  padding:15px;
   }
   .item-tall{
   height: 50vh;
@@ -406,4 +438,131 @@ section {
     float: left;
   }
 }
+ 
+  // testimonials
 
+/* carousel */
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+  text-align:center;
+
+/* indicator position */
+   .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: -10px;
+    margin-right: -19px;
+    /* indicator color */
+      .carousel-indicators li {
+      background: #c0c0c0;
+      }
+        /* active indicator */
+       .active {
+        background: #333333;
+        height:10px;
+        width:10px;
+        margin-bottom:1px;
+        }
+    }
+  p {
+    font-style:italic;
+  }
+  img {
+    height: 100px;
+    width: 150px;
+    margin-bottom: 10px;
+  }
+}
+
+  #testimonials {
+
+    height: 400px !important;
+    overflow: hidden;
+  }
+
+
+// retouch
+#retouch {
+  // background-color:$main-green;
+  .retouch-paragraph {
+    margin-top: 15px;
+  }
+  .link {
+    color: $hover-light;
+
+  }
+}
+
+#blog {
+  .content{
+    padding:15px;
+  
+  img {
+    height: 75px;
+    width:75px;
+    margin:30px ;
+  }
+  .img-icon {
+    display: flex;
+    justify-content: center;
+  }
+  p {
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  .blog-list{
+    text-align:left;
+    margin:0 0 20px 0;
+   
+    p{
+      text-align: justify;
+    }
+    h4{
+      text-align: left;
+    }
+    ul{
+      margin:0 0 0px 0;
+      padding:0;
+      list-style: none;
+      li{
+        margin:10px 0 ;
+        a{
+          // text-decoration: none;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+ }
+}
+
+#shop{
+  // background-color:$main-green;
+  // color:set-text-color($main-green);
+  a {
+    margin-top: 20px;
+    color:$hover-light;
+  }
+
+}
+
+// contact
+#contact {
+  // background-color:$main-green;
+  // color:set-text-color($main-green);
+}
+footer {
+  background-color:$menu-color;
+  
+    .contact-links{
+    padding-top:5px 10px;
+    display:flex;
+    justify-content: center;
+    a{
+      padding:15px;
+      font-size: 30px;
+      color:#fff;
+    }
+  }
+}

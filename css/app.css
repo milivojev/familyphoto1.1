@@ -5878,12 +5878,11 @@ button.close {
     .navbar-default .navbar-nav > li > a:hover {
       color: yellow; }
   .navbar-default .navbar-brand {
-    color: yellow; }
-    .navbar-default .navbar-brand a {
-      font-family: 'Catamaran', 'Ubuntu Mono',sans-serif; }
-  .navbar-default .navbar-brand:hover {
     color: yellow;
-    background-color: #009933; }
+    font-family: 'Josefin-sans', 'Ubuntu Mono',sans-serif;
+    font-size: 1.8em; }
+  .navbar-default .navbar-brand:hover {
+    color: #fff; }
 
 .navbar-fixed-top {
   border-bottom: 0; }

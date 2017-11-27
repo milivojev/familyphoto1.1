@@ -35,15 +35,17 @@
   
   .navbar-brand  {
   color:$hover-light;
-  // font-size: 2em;
+  font-family: 'Josefin-sans', 'Ubuntu Mono',sans-serif;
+    font-size: 1.8em;
+  // font-weight: bold;
   a {
-    font-family: 'Catamaran', 'Ubuntu Mono',sans-serif;
+    
   
     }
   }
   .navbar-brand:hover{
-    color:$hover-light;
-    background-color:$main-green;
+    color:$main-color;
+    // background-color:$main-green;
   }
 
 }

@@ -235,7 +235,7 @@ section {
   text-decoration: none ;
   // margin-bottom: 70px;
   margin:8px;
-   background-color:rgba(50,50,50,0.3);
+   background-color:rgba(50,50,50,0.5);
    transition: all 0.3s ease;
    flex:0 0 auto;
    text-align: center;
@@ -297,7 +297,7 @@ section {
   border: 1px solid $hover-light;
   text-decoration: none ;
   margin-bottom: 70px;
-   background-color:rgba(50,50,50,0.3);
+   background-color:rgba(50,50,50,0.5);
    transition: all 0.3s ease;
   &:hover {
     color:$hover-light;

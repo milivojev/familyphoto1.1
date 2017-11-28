@@ -5918,7 +5918,7 @@ section {
     border-radius: 20px;
     text-decoration: none;
     margin: 8px;
-    background-color: rgba(50, 50, 50, 0.3);
+    background-color: rgba(50, 50, 50, 0.5);
     transition: all 0.3s ease;
     flex: 0 0 auto;
     text-align: center; }
@@ -5965,7 +5965,7 @@ section {
     border: 1px solid yellow;
     text-decoration: none;
     margin-bottom: 70px;
-    background-color: rgba(50, 50, 50, 0.3);
+    background-color: rgba(50, 50, 50, 0.5);
     transition: all 0.3s ease; }
     .hero-text .button:hover {
       color: yellow;

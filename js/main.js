@@ -54,8 +54,8 @@ $(document).ready(function(){
         }
         else
         {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+           $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+           $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
             $(".item").not('.'+value).hide('3000').addClass('.none');
             $('.item').filter('.'+value).show('3000').addClass('.flex');
             
@@ -92,53 +92,53 @@ $('#shop').parallax({imageSrc: 'assets/img/shop-background2.jpg'});
 
 // scroll reveal
 
-// window.sr = ScrollReveal();
+window.sr = ScrollReveal();
 
-// sr.reveal(' #o_meni .container, .gallery ,  #retouch .container',{ 
-//     duration: 1000,
-//     origin:'top',
-//     distance: '20px',
-//     viewFactor: 0.1,
-//     reset:true
-//      });
-// sr.reveal('#testimonials .container',{ 
-//     duration: 1000,
-//     origin:'right',
-//     distance: '200px',
-//     viewFactor: 0.2,
-//     reset:true
-//      });
+sr.reveal(' #o_meni .container, .gallery ,  #retouch .container',{ 
+    duration: 1000,
+    origin:'top',
+    distance: '20px',
+    viewFactor: 0.1,
+    reset:true
+     });
+sr.reveal('#testimonials .container',{ 
+    duration: 1000,
+    origin:'right',
+    distance: '200px',
+    viewFactor: 0.2,
+    reset:true
+     });
 
 
-// sr.reveal('#blog div.col-sm-6:first-child',{ 
-//     duration: 1000,
-//     origin:'left',
-//     distance: '200px',
-//     viewFactor: 0.1,
-//     reset:true
-//      })
-// sr.reveal('#blog div.col-sm-6:nth-child(2)',{ 
-//     duration: 1000,
-//     origin:'right',
-//     delay:300,
-//     distance: '200px',
-//     viewFactor: 0.1,
-//     reset:true
-//      });
-// sr.reveal('#shop .container',{ 
-//     duration: 1000,
-//     origin:'left',
-//     distance: '200px',
-//     viewFactor: 0.2,
-//     reset:true
-//      });
+sr.reveal('#blog div.col-sm-6:first-child',{ 
+    duration: 1000,
+    origin:'left',
+    distance: '200px',
+    viewFactor: 0.1,
+    reset:true
+     })
+sr.reveal('#blog div.col-sm-6:nth-child(2)',{ 
+    duration: 1000,
+    origin:'right',
+    delay:300,
+    distance: '200px',
+    viewFactor: 0.1,
+    reset:true
+     });
+sr.reveal('#shop .container',{ 
+    duration: 1000,
+    origin:'left',
+    distance: '200px',
+    viewFactor: 0.2,
+    reset:true
+     });
 
-// sr.reveal('#contact .container',{ 
-//     duration: 1000,
-//     origin:'bottom',
-//     distance: '200px',
-//     viewFactor: 0.2,
-//     reset:true
-//      });
+sr.reveal('#contact .container',{ 
+    duration: 1000,
+    origin:'bottom',
+    distance: '200px',
+    viewFactor: 0.2,
+    reset:true
+     });
 
   
